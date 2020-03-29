@@ -2,8 +2,8 @@
 
 namespace AssetManagerTest\Service;
 
-use Assetic\Contracts\Asset\AssetInterface;
 use Assetic\Asset\StringAsset;
+use Assetic\Contracts\Asset\AssetInterface;
 use Assetic\Contracts\Filter\FilterInterface;;
 use AssetManager\Service\AssetFilterManager;
 use PHPUnit\Framework\TestCase;
