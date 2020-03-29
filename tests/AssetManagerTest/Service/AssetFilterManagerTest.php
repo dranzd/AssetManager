@@ -4,7 +4,7 @@ namespace AssetManagerTest\Service;
 
 use Assetic\Asset\AssetInterface;
 use Assetic\Asset\StringAsset;
-use Assetic\Filter\FilterInterface;
+use Assetic\Contracts\Filter\FilterInterface;;
 use AssetManager\Service\AssetFilterManager;
 use PHPUnit\Framework\TestCase;
 use Laminas\ServiceManager\ServiceManager;
@@ -95,7 +95,7 @@ class AssetFilterManagerTest extends TestCase
 
         $assetFilterManager->setFilters('test/path.test', $asset);
     }
-    
+
     public function testFiltersAreInstantiatedOnce()
     {
         $assetFilterManager = new AssetFilterManager(array(
@@ -105,9 +105,9 @@ class AssetFilterManagerTest extends TestCase
                 ),
             ),
         ));
-        
+
         $filterInstance = null;
-        
+
         $asset = $this->createMock(AssetInterface::class);
         $asset
             ->expects($this->any())
@@ -118,7 +118,7 @@ class AssetFilterManagerTest extends TestCase
                 }
                 return  $filter === $filterInstance;
             }));
-        
+
         $assetFilterManager->setFilters('test/path.test', $asset);
         $assetFilterManager->setFilters('test/path.test', $asset);
     }
