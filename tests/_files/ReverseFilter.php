@@ -2,8 +2,9 @@
 
 
 use Assetic\Contracts\Asset\AssetInterface;
+use Assetic\Contracts\Filter\FilterInterface;
 
-class ReverseFilter implements Assetic\Contracts\Filter\FilterInterface;
+class ReverseFilter implements FilterInterface
 {
     private static $executed;
     public function filterLoad(AssetInterface $asset)
