@@ -5,7 +5,7 @@ namespace AssetManagerTest\Service;
 use Assetic\Asset\AssetCache;
 use Assetic\Asset\FileAsset;
 use Assetic\Cache\ApcCache;
-use Assetic\Cache\CacheInterface;
+use Assetic\Contracts\Cache\CacheInterface;
 use Assetic\Cache\FilesystemCache;
 use AssetManager\Cache\FilePathCache;
 use AssetManager\Service\AssetCacheManager;
