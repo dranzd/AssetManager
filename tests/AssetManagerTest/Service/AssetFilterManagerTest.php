@@ -2,7 +2,7 @@
 
 namespace AssetManagerTest\Service;
 
-use Assetic\Asset\AssetInterface;
+use Assetic\Contracts\Asset\AssetInterface;
 use Assetic\Asset\StringAsset;
 use Assetic\Contracts\Filter\FilterInterface;;
 use AssetManager\Service\AssetFilterManager;

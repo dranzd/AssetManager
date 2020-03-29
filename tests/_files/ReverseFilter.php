@@ -1,7 +1,7 @@
 <?php
 
 
-use Assetic\Asset\AssetInterface;
+use Assetic\Contracts\Asset\AssetInterface;
 
 class ReverseFilter implements Assetic\Contracts\Filter\FilterInterface;
 {

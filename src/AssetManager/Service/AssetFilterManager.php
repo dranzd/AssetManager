@@ -2,7 +2,7 @@
 
 namespace AssetManager\Service;
 
-use Assetic\Asset\AssetInterface;
+use Assetic\Contracts\Asset\AssetInterface;
 use Assetic\Contracts\Filter\FilterInterface;
 use AssetManager\Exception;
 use AssetManager\Resolver\MimeResolverAwareInterface;

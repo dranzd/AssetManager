@@ -3,7 +3,7 @@
 namespace AssetManager\Service;
 
 use Assetic\Asset\AssetCache;
-use Assetic\Asset\AssetInterface;
+use Assetic\Contracts\Asset\AssetInterface;
 use Assetic\Contracts\Cache\CacheInterface;
 use Laminas\ServiceManager\ServiceLocatorInterface;
 
